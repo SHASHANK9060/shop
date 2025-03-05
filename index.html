@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patti Calculation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Patti Calculation</h1>
+        <form id="calculationForm">
+            <div class="form-group">
+                <label for="net">Enter Net Weight (in kgs):</label>
+                <input type="number" id="net" placeholder="Enter net weight" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bags">Enter Total Bags:</label>
+                <input type="number" id="bags" placeholder="Enter total bags" required>
+            </div>
+
+            <div class="form-group">
+                <label for="price">Enter Price of Rice per kg (₹):</label>
+                <input type="number" id="price" placeholder="Enter price per kg" step="0.01" required>
+            </div>
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="result" class="result">
+            <h2>Results</h2>
+            <p><strong>Total Amount:</strong> ₹<span id="totalAmount">-</span></p>
+            <p><strong>Final Amount after Expenses:</strong> ₹<span id="finalAmount">-</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
